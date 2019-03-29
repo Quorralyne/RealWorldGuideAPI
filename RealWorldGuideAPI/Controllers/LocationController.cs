@@ -4,7 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using RealWorldGuide.Data;
+using RealWorldGuideAPI.Models;
 
 namespace RealWorldGuideAPI.Controllers
 {
