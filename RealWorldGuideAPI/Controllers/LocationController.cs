@@ -8,6 +8,7 @@ using RealWorldGuideAPI.Models;
 
 namespace RealWorldGuideAPI.Controllers
 {
+    [Authorize]
     public class LocationController : ApiController
     {
         // GET: api/Location/Test
