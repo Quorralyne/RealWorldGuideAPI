@@ -8,7 +8,6 @@ using RealWorldGuideAPI.Models;
 
 namespace RealWorldGuideAPI.Controllers
 {
-    [Authorize]
     public class LocationController : ApiController
     {
         // GET: api/Location/Test
@@ -18,6 +17,7 @@ namespace RealWorldGuideAPI.Controllers
             return "Hello THAT Conference!";
         }
 
+        [Authorize]
         // GET: api/Location/Events
         [HttpGet, Route("api/location/events")]
         public List<Event> GetAllEvents()
