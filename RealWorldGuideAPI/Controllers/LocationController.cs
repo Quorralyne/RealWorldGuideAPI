@@ -14,7 +14,7 @@ namespace RealWorldGuideAPI.Controllers
         [HttpGet, Route("api/location/test")]
         public string Test()
         {
-            return "Hello NDC London!";
+            return "Hello NDC London! The Chiefs are going to the Superbowl. KC forever!";
         }
 
         #region Things That Dont Matter
