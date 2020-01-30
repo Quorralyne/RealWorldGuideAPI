@@ -11,13 +11,13 @@ namespace RealWorldGuideAPI.Controllers
     public class LocationController : ApiController
     {
         // GET: api/Location/Test
-        [Authorize]
         [HttpGet, Route("api/location/test")]
         public string Test()
         {
             return "Hello NDC!";
         }
 
+        #region Things That Dont Matter
         [Authorize]
         // GET: api/Location/Events
         [HttpGet, Route("api/location/events")]
@@ -77,6 +77,8 @@ namespace RealWorldGuideAPI.Controllers
             }
             return Request.CreateResponse(HttpStatusCode.NotFound);
         }
+
+        #endregion
 
         #region Sample Data Methods
 
