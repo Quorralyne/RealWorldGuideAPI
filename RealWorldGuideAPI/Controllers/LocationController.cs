@@ -10,6 +10,7 @@ namespace RealWorldGuideAPI.Controllers
 {
     public class LocationController : ApiController
     {
+        [Authorize]
         // GET: api/Location/Test
         [HttpGet, Route("api/location/test")]
         public string Test()
