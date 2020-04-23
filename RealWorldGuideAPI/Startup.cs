@@ -22,7 +22,8 @@ namespace RealWorldGuideAPI
                authority + "/.well-known/openid-configuration",
                new OpenIdConnectConfigurationRetriever(),
                new HttpDocumentRetriever());
-            var discoveryDocument = Task.Run(() => configurationManager.GetConfigurationAsync()).GetAwaiter().GetResult();
+            var discoveryDocument = 
+                Task.Run(() => configurationManager.GetConfigurationAsync()).GetAwaiter().GetResult();
 
             app.UseJwtBearerAuthentication(
                new JwtBearerAuthenticationOptions
